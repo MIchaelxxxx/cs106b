@@ -1,0 +1,12 @@
+<?php
+function hello() {
+	echo 'Hello world!';
+	
+	$ar = array(
+		1,		// Some note
+		2,		// some note
+		342243,		// some note
+		432423423,	// some note
+		4		// some note
+	);
+}

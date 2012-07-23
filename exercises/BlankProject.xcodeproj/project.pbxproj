@@ -1,0 +1,2454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D001756C15B8F14900959129 /* Exercise.5.4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D001756B15B8F14900959129 /* Exercise.5.4.cpp */; };
+		D010D02515B647EA004E5457 /* Exercise.3.5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8E07053140DD7F70047C0C8 /* Exercise.3.5.cpp */; };
+		D010D02715B647EA004E5457 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D010D02815B647EA004E5457 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4060D2F5EB100348E1D /* Carbon.framework */; };
+		D010D02915B647EA004E5457 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */; };
+		D010D02A15B647EA004E5457 /* libStanfordCPPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */; };
+		D010D05915B64957004E5457 /* Exercise.3.3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D010D02115B647C9004E5457 /* Exercise.3.3.cpp */; };
+		D010D0BC15B654EA004E5457 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D010D0BD15B654EA004E5457 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4060D2F5EB100348E1D /* Carbon.framework */; };
+		D010D0BE15B654EA004E5457 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */; };
+		D010D0BF15B654EA004E5457 /* libStanfordCPPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */; };
+		D010D0C515B65500004E5457 /* Exercise.3.16.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D010D0B615B654DE004E5457 /* Exercise.3.16.cpp */; };
+		D010D10D15B65E90004E5457 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D010D10E15B65E90004E5457 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4060D2F5EB100348E1D /* Carbon.framework */; };
+		D010D10F15B65E90004E5457 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */; };
+		D010D11015B65E90004E5457 /* libStanfordCPPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */; };
+		D010D11615B65F1E004E5457 /* Exercise.3.20.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D010D10515B65D93004E5457 /* Exercise.3.20.cpp */; };
+		D010D23C15B6F709004E5457 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D010D23D15B6F709004E5457 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4060D2F5EB100348E1D /* Carbon.framework */; };
+		D010D23E15B6F709004E5457 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */; };
+		D010D23F15B6F709004E5457 /* libStanfordCPPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */; };
+		D010D24515B6F722004E5457 /* Exercise.4.4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D010D23615B6F6E4004E5457 /* Exercise.4.4.cpp */; };
+		D010D38D15B77216004E5457 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D010D38E15B77216004E5457 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4060D2F5EB100348E1D /* Carbon.framework */; };
+		D010D38F15B77216004E5457 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */; };
+		D010D39015B77216004E5457 /* libStanfordCPPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */; };
+		D010D39615B7723B004E5457 /* Exercise.4.5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D010D37615B77186004E5457 /* Exercise.4.5.cpp */; };
+		D010D3BE15B7737F004E5457 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D010D3BF15B7737F004E5457 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4060D2F5EB100348E1D /* Carbon.framework */; };
+		D010D3C015B7737F004E5457 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */; };
+		D010D3C115B7737F004E5457 /* libStanfordCPPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */; };
+		D010D3C915B773AF004E5457 /* Exercise.4.8.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D010D3C815B773AF004E5457 /* Exercise.4.8.cpp */; };
+		D010D44915B79CE5004E5457 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D010D44A15B79CE5004E5457 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4060D2F5EB100348E1D /* Carbon.framework */; };
+		D010D44B15B79CE5004E5457 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */; };
+		D010D44C15B79CE5004E5457 /* libStanfordCPPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */; };
+		D010D45315B79D15004E5457 /* Exercise.4.9.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D010D45215B79D15004E5457 /* Exercise.4.9.cpp */; };
+		D02B8F7D15B97E300076E479 /* Exercise.5.8.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D02B8F7C15B97E300076E479 /* Exercise.5.8.cpp */; };
+		D02B8F7E15B97E500076E479 /* Exercise.5.6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D00175FC15B8FE6B00959129 /* Exercise.5.6.cpp */; };
+		D082B07715B61BBE00F9679F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D082B07815B61BBE00F9679F /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4060D2F5EB100348E1D /* Carbon.framework */; };
+		D082B07915B61BBE00F9679F /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */; };
+		D082B07A15B61BBE00F9679F /* libStanfordCPPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */; };
+		D095115315B889C20075B085 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D095115415B889C20075B085 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4060D2F5EB100348E1D /* Carbon.framework */; };
+		D095115515B889C20075B085 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */; };
+		D095115615B889C20075B085 /* libStanfordCPPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */; };
+		D095117515B88BFC0075B085 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D095117615B88BFC0075B085 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4060D2F5EB100348E1D /* Carbon.framework */; };
+		D095117715B88BFC0075B085 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */; };
+		D095117815B88BFC0075B085 /* libStanfordCPPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */; };
+		D095118F15B88C010075B085 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D095119015B88C010075B085 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4060D2F5EB100348E1D /* Carbon.framework */; };
+		D095119115B88C010075B085 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */; };
+		D095119215B88C010075B085 /* libStanfordCPPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */; };
+		D09511A915B88C070075B085 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D09511AA15B88C070075B085 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4060D2F5EB100348E1D /* Carbon.framework */; };
+		D09511AB15B88C070075B085 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */; };
+		D09511AC15B88C070075B085 /* libStanfordCPPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */; };
+		D09511B615B88C380075B085 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D09511B715B88C380075B085 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4060D2F5EB100348E1D /* Carbon.framework */; };
+		D09511B815B88C380075B085 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */; };
+		D09511B915B88C380075B085 /* libStanfordCPPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */; };
+		D09511C315B88C490075B085 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D09511C415B88C490075B085 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4060D2F5EB100348E1D /* Carbon.framework */; };
+		D09511C515B88C490075B085 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */; };
+		D09511C615B88C490075B085 /* libStanfordCPPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */; };
+		D09511D015B88C490075B085 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D09511D115B88C490075B085 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4060D2F5EB100348E1D /* Carbon.framework */; };
+		D09511D215B88C490075B085 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */; };
+		D09511D315B88C490075B085 /* libStanfordCPPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */; };
+		D09511DD15B88C490075B085 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D09511DE15B88C490075B085 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4060D2F5EB100348E1D /* Carbon.framework */; };
+		D09511DF15B88C490075B085 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */; };
+		D09511E015B88C490075B085 /* libStanfordCPPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */; };
+		D09511EA15B88C4A0075B085 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D09511EB15B88C4A0075B085 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4060D2F5EB100348E1D /* Carbon.framework */; };
+		D09511EC15B88C4A0075B085 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */; };
+		D09511ED15B88C4A0075B085 /* libStanfordCPPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */; };
+		D09511F715B88C4A0075B085 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D09511F815B88C4A0075B085 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4060D2F5EB100348E1D /* Carbon.framework */; };
+		D09511F915B88C4A0075B085 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */; };
+		D09511FA15B88C4A0075B085 /* libStanfordCPPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */; };
+		D095120415B88C4A0075B085 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D095120515B88C4A0075B085 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4060D2F5EB100348E1D /* Carbon.framework */; };
+		D095120615B88C4A0075B085 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */; };
+		D095120715B88C4A0075B085 /* libStanfordCPPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */; };
+		D095121115B88C4A0075B085 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D095121215B88C4A0075B085 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4060D2F5EB100348E1D /* Carbon.framework */; };
+		D095121315B88C4A0075B085 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */; };
+		D095121415B88C4A0075B085 /* libStanfordCPPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */; };
+		D095121E15B88C4A0075B085 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D095121F15B88C4A0075B085 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4060D2F5EB100348E1D /* Carbon.framework */; };
+		D095122015B88C4A0075B085 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */; };
+		D095122115B88C4A0075B085 /* libStanfordCPPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */; };
+		D095122B15B88C4A0075B085 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D095122C15B88C4A0075B085 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4060D2F5EB100348E1D /* Carbon.framework */; };
+		D095122D15B88C4A0075B085 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */; };
+		D095122E15B88C4A0075B085 /* libStanfordCPPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */; };
+		D095123A15B88C610075B085 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D095123B15B88C610075B085 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4060D2F5EB100348E1D /* Carbon.framework */; };
+		D095123C15B88C610075B085 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */; };
+		D095123D15B88C610075B085 /* libStanfordCPPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */; };
+		D095125015B88E840075B085 /* Exercise.5.1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D095124F15B88E840075B085 /* Exercise.5.1.cpp */; };
+		D095126715B893820075B085 /* Exercise.5.2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D095126615B893820075B085 /* Exercise.5.2.cpp */; };
+		D0BE0BC715B619330068A669 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4060D2F5EB100348E1D /* Carbon.framework */; };
+		D0BE0BC815B619330068A669 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D0BE0BC915B619420068A669 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */; };
+		D0BE0BCA15B619500068A669 /* libStanfordCPPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */; };
+		D0BE0BCB15B6196E0068A669 /* Exercise.3.5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8E07053140DD7F70047C0C8 /* Exercise.3.5.cpp */; };
+		D0CC84DE15B848300063E32A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D0CC84DF15B848300063E32A /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4060D2F5EB100348E1D /* Carbon.framework */; };
+		D0CC84E015B848300063E32A /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */; };
+		D0CC84E115B848300063E32A /* libStanfordCPPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */; };
+		D0CC84E915B8486C0063E32A /* Exercise.4.11.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0CC84E815B8486C0063E32A /* Exercise.4.11.cpp */; };
+		D0CC858A15B86EE40063E32A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D0CC858B15B86EE40063E32A /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4060D2F5EB100348E1D /* Carbon.framework */; };
+		D0CC858C15B86EE40063E32A /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */; };
+		D0CC858D15B86EE40063E32A /* libStanfordCPPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */; };
+		D0CC85D715B878E80063E32A /* BlankProject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0BE0BB115B618FC0068A669 /* BlankProject.cpp */; };
+		D0CC85D915B878E80063E32A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D0CC85DA15B878E80063E32A /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4060D2F5EB100348E1D /* Carbon.framework */; };
+		D0CC85DB15B878E80063E32A /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */; };
+		D0CC85DC15B878E80063E32A /* libStanfordCPPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */; };
+		D0F1AC8415B7A9BE007397FA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D0F1AC8515B7A9BE007397FA /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4060D2F5EB100348E1D /* Carbon.framework */; };
+		D0F1AC8615B7A9BE007397FA /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */; };
+		D0F1AC8715B7A9BE007397FA /* libStanfordCPPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */; };
+		D0F1AC8E15B7A9EA007397FA /* Exercise.4.10.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0F1AC8D15B7A9EA007397FA /* Exercise.4.10.cpp */; };
+		D0FBC1D015B9C0A50060EF62 /* Exercise.5.9.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0FBC1CF15B9C0A50060EF62 /* Exercise.5.9.cpp */; };
+		D0FBC54815BA2D510060EF62 /* Exercise.5.13.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0FBC54715BA2D510060EF62 /* Exercise.5.13.cpp */; };
+		D0FBC57615BA30200060EF62 /* Exercise.5.14.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0FBC57515BA30200060EF62 /* Exercise.5.14.cpp */; };
+		D0FBC5CA15BA35130060EF62 /* Exercise.5.15.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0FBC5C915BA35130060EF62 /* Exercise.5.15.cpp */; };
+		D0FBC65915BA480A0060EF62 /* Exercise.5.16.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0FBC65815BA480A0060EF62 /* Exercise.5.16.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D095113415B888D20075B085 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D082B07215B61BBE00F9679F;
+			remoteInfo = "Exercise.3.1-3";
+		};
+		D095113615B888F50075B085 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D082B07215B61BBE00F9679F;
+			remoteInfo = "Exercise.3.1-3";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A8E07053140DD7F70047C0C8 /* Exercise.3.5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exercise.3.5.cpp; sourceTree = "<group>"; };
+		D001756B15B8F14900959129 /* Exercise.5.4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exercise.5.4.cpp; sourceTree = "<group>"; };
+		D00175FC15B8FE6B00959129 /* Exercise.5.6.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exercise.5.6.cpp; sourceTree = "<group>"; };
+		D010D02115B647C9004E5457 /* Exercise.3.3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exercise.3.3.cpp; sourceTree = "<group>"; };
+		D010D02D15B647EA004E5457 /* BlankProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlankProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D010D0B615B654DE004E5457 /* Exercise.3.16.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exercise.3.16.cpp; sourceTree = "<group>"; };
+		D010D0C215B654EA004E5457 /* BlankProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlankProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D010D10515B65D93004E5457 /* Exercise.3.20.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exercise.3.20.cpp; sourceTree = "<group>"; };
+		D010D11315B65E90004E5457 /* BlankProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlankProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D010D23615B6F6E4004E5457 /* Exercise.4.4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exercise.4.4.cpp; sourceTree = "<group>"; };
+		D010D24215B6F709004E5457 /* BlankProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlankProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D010D37615B77186004E5457 /* Exercise.4.5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exercise.4.5.cpp; sourceTree = "<group>"; };
+		D010D39315B77216004E5457 /* BlankProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlankProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D010D3C415B7737F004E5457 /* BlankProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlankProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D010D3C815B773AF004E5457 /* Exercise.4.8.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exercise.4.8.cpp; sourceTree = "<group>"; };
+		D010D44F15B79CE5004E5457 /* BlankProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlankProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D010D45215B79D15004E5457 /* Exercise.4.9.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exercise.4.9.cpp; sourceTree = "<group>"; };
+		D02B8F7C15B97E300076E479 /* Exercise.5.8.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exercise.5.8.cpp; sourceTree = "<group>"; };
+		D082B07D15B61BBE00F9679F /* BlankProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlankProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D095115915B889C20075B085 /* BlankProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlankProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D095117B15B88BFC0075B085 /* BlankProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlankProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D095119515B88C010075B085 /* BlankProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlankProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D09511AF15B88C070075B085 /* BlankProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlankProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D09511BC15B88C380075B085 /* BlankProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlankProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D09511C915B88C490075B085 /* BlankProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlankProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D09511D615B88C490075B085 /* BlankProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlankProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D09511E315B88C490075B085 /* BlankProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlankProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D09511F015B88C4A0075B085 /* BlankProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlankProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D09511FD15B88C4A0075B085 /* BlankProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlankProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D095120A15B88C4A0075B085 /* BlankProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlankProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D095121715B88C4A0075B085 /* BlankProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlankProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D095122415B88C4A0075B085 /* BlankProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlankProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D095123115B88C4A0075B085 /* BlankProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlankProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D095124015B88C610075B085 /* BlankProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlankProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D095124F15B88E840075B085 /* Exercise.5.1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exercise.5.1.cpp; sourceTree = "<group>"; };
+		D095126615B893820075B085 /* Exercise.5.2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exercise.5.2.cpp; sourceTree = "<group>"; };
+		D0BE0BB115B618FC0068A669 /* BlankProject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlankProject.cpp; sourceTree = "<group>"; };
+		D0BE0BC215B619260068A669 /* Assignment.1.2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment.1.2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0CC84E415B848300063E32A /* BlankProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlankProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0CC84E815B8486C0063E32A /* Exercise.4.11.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exercise.4.11.cpp; sourceTree = "<group>"; };
+		D0CC859015B86EE40063E32A /* BlankProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlankProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0CC85DF15B878E80063E32A /* BlankProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlankProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0F1AC8A15B7A9BE007397FA /* BlankProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlankProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0F1AC8D15B7A9EA007397FA /* Exercise.4.10.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exercise.4.10.cpp; sourceTree = "<group>"; };
+		D0FBC1CF15B9C0A50060EF62 /* Exercise.5.9.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exercise.5.9.cpp; sourceTree = "<group>"; };
+		D0FBC54715BA2D510060EF62 /* Exercise.5.13.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exercise.5.13.cpp; sourceTree = "<group>"; };
+		D0FBC57515BA30200060EF62 /* Exercise.5.14.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exercise.5.14.cpp; sourceTree = "<group>"; };
+		D0FBC5C915BA35130060EF62 /* Exercise.5.15.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exercise.5.15.cpp; sourceTree = "<group>"; };
+		D0FBC65815BA480A0060EF62 /* Exercise.5.16.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exercise.5.16.cpp; sourceTree = "<group>"; };
+		E3DDB4060D2F5EB100348E1D /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
+		E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libStanfordCPPLib.a; path = StanfordCPPLib/libStanfordCPPLib.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D010D02615B647EA004E5457 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D010D02715B647EA004E5457 /* Cocoa.framework in Frameworks */,
+				D010D02815B647EA004E5457 /* Carbon.framework in Frameworks */,
+				D010D02915B647EA004E5457 /* QuickTime.framework in Frameworks */,
+				D010D02A15B647EA004E5457 /* libStanfordCPPLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D010D0BB15B654EA004E5457 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D010D0BC15B654EA004E5457 /* Cocoa.framework in Frameworks */,
+				D010D0BD15B654EA004E5457 /* Carbon.framework in Frameworks */,
+				D010D0BE15B654EA004E5457 /* QuickTime.framework in Frameworks */,
+				D010D0BF15B654EA004E5457 /* libStanfordCPPLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D010D10C15B65E90004E5457 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D010D10D15B65E90004E5457 /* Cocoa.framework in Frameworks */,
+				D010D10E15B65E90004E5457 /* Carbon.framework in Frameworks */,
+				D010D10F15B65E90004E5457 /* QuickTime.framework in Frameworks */,
+				D010D11015B65E90004E5457 /* libStanfordCPPLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D010D23B15B6F709004E5457 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D010D23C15B6F709004E5457 /* Cocoa.framework in Frameworks */,
+				D010D23D15B6F709004E5457 /* Carbon.framework in Frameworks */,
+				D010D23E15B6F709004E5457 /* QuickTime.framework in Frameworks */,
+				D010D23F15B6F709004E5457 /* libStanfordCPPLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D010D38C15B77216004E5457 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D010D38D15B77216004E5457 /* Cocoa.framework in Frameworks */,
+				D010D38E15B77216004E5457 /* Carbon.framework in Frameworks */,
+				D010D38F15B77216004E5457 /* QuickTime.framework in Frameworks */,
+				D010D39015B77216004E5457 /* libStanfordCPPLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D010D3BD15B7737F004E5457 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D010D3BE15B7737F004E5457 /* Cocoa.framework in Frameworks */,
+				D010D3BF15B7737F004E5457 /* Carbon.framework in Frameworks */,
+				D010D3C015B7737F004E5457 /* QuickTime.framework in Frameworks */,
+				D010D3C115B7737F004E5457 /* libStanfordCPPLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D010D44815B79CE5004E5457 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D010D44915B79CE5004E5457 /* Cocoa.framework in Frameworks */,
+				D010D44A15B79CE5004E5457 /* Carbon.framework in Frameworks */,
+				D010D44B15B79CE5004E5457 /* QuickTime.framework in Frameworks */,
+				D010D44C15B79CE5004E5457 /* libStanfordCPPLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D082B07615B61BBE00F9679F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D082B07715B61BBE00F9679F /* Cocoa.framework in Frameworks */,
+				D082B07815B61BBE00F9679F /* Carbon.framework in Frameworks */,
+				D082B07915B61BBE00F9679F /* QuickTime.framework in Frameworks */,
+				D082B07A15B61BBE00F9679F /* libStanfordCPPLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D095115215B889C20075B085 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D095115315B889C20075B085 /* Cocoa.framework in Frameworks */,
+				D095115415B889C20075B085 /* Carbon.framework in Frameworks */,
+				D095115515B889C20075B085 /* QuickTime.framework in Frameworks */,
+				D095115615B889C20075B085 /* libStanfordCPPLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D095117415B88BFC0075B085 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D095117515B88BFC0075B085 /* Cocoa.framework in Frameworks */,
+				D095117615B88BFC0075B085 /* Carbon.framework in Frameworks */,
+				D095117715B88BFC0075B085 /* QuickTime.framework in Frameworks */,
+				D095117815B88BFC0075B085 /* libStanfordCPPLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D095118E15B88C010075B085 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D095118F15B88C010075B085 /* Cocoa.framework in Frameworks */,
+				D095119015B88C010075B085 /* Carbon.framework in Frameworks */,
+				D095119115B88C010075B085 /* QuickTime.framework in Frameworks */,
+				D095119215B88C010075B085 /* libStanfordCPPLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D09511A815B88C070075B085 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D09511A915B88C070075B085 /* Cocoa.framework in Frameworks */,
+				D09511AA15B88C070075B085 /* Carbon.framework in Frameworks */,
+				D09511AB15B88C070075B085 /* QuickTime.framework in Frameworks */,
+				D09511AC15B88C070075B085 /* libStanfordCPPLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D09511B515B88C380075B085 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D09511B615B88C380075B085 /* Cocoa.framework in Frameworks */,
+				D09511B715B88C380075B085 /* Carbon.framework in Frameworks */,
+				D09511B815B88C380075B085 /* QuickTime.framework in Frameworks */,
+				D09511B915B88C380075B085 /* libStanfordCPPLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D09511C215B88C490075B085 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D09511C315B88C490075B085 /* Cocoa.framework in Frameworks */,
+				D09511C415B88C490075B085 /* Carbon.framework in Frameworks */,
+				D09511C515B88C490075B085 /* QuickTime.framework in Frameworks */,
+				D09511C615B88C490075B085 /* libStanfordCPPLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D09511CF15B88C490075B085 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D09511D015B88C490075B085 /* Cocoa.framework in Frameworks */,
+				D09511D115B88C490075B085 /* Carbon.framework in Frameworks */,
+				D09511D215B88C490075B085 /* QuickTime.framework in Frameworks */,
+				D09511D315B88C490075B085 /* libStanfordCPPLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D09511DC15B88C490075B085 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D09511DD15B88C490075B085 /* Cocoa.framework in Frameworks */,
+				D09511DE15B88C490075B085 /* Carbon.framework in Frameworks */,
+				D09511DF15B88C490075B085 /* QuickTime.framework in Frameworks */,
+				D09511E015B88C490075B085 /* libStanfordCPPLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D09511E915B88C4A0075B085 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D09511EA15B88C4A0075B085 /* Cocoa.framework in Frameworks */,
+				D09511EB15B88C4A0075B085 /* Carbon.framework in Frameworks */,
+				D09511EC15B88C4A0075B085 /* QuickTime.framework in Frameworks */,
+				D09511ED15B88C4A0075B085 /* libStanfordCPPLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D09511F615B88C4A0075B085 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D09511F715B88C4A0075B085 /* Cocoa.framework in Frameworks */,
+				D09511F815B88C4A0075B085 /* Carbon.framework in Frameworks */,
+				D09511F915B88C4A0075B085 /* QuickTime.framework in Frameworks */,
+				D09511FA15B88C4A0075B085 /* libStanfordCPPLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D095120315B88C4A0075B085 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D095120415B88C4A0075B085 /* Cocoa.framework in Frameworks */,
+				D095120515B88C4A0075B085 /* Carbon.framework in Frameworks */,
+				D095120615B88C4A0075B085 /* QuickTime.framework in Frameworks */,
+				D095120715B88C4A0075B085 /* libStanfordCPPLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D095121015B88C4A0075B085 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D095121115B88C4A0075B085 /* Cocoa.framework in Frameworks */,
+				D095121215B88C4A0075B085 /* Carbon.framework in Frameworks */,
+				D095121315B88C4A0075B085 /* QuickTime.framework in Frameworks */,
+				D095121415B88C4A0075B085 /* libStanfordCPPLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D095121D15B88C4A0075B085 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D095121E15B88C4A0075B085 /* Cocoa.framework in Frameworks */,
+				D095121F15B88C4A0075B085 /* Carbon.framework in Frameworks */,
+				D095122015B88C4A0075B085 /* QuickTime.framework in Frameworks */,
+				D095122115B88C4A0075B085 /* libStanfordCPPLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D095122A15B88C4A0075B085 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D095122B15B88C4A0075B085 /* Cocoa.framework in Frameworks */,
+				D095122C15B88C4A0075B085 /* Carbon.framework in Frameworks */,
+				D095122D15B88C4A0075B085 /* QuickTime.framework in Frameworks */,
+				D095122E15B88C4A0075B085 /* libStanfordCPPLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D095123915B88C610075B085 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D095123A15B88C610075B085 /* Cocoa.framework in Frameworks */,
+				D095123B15B88C610075B085 /* Carbon.framework in Frameworks */,
+				D095123C15B88C610075B085 /* QuickTime.framework in Frameworks */,
+				D095123D15B88C610075B085 /* libStanfordCPPLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0BE0BC015B619260068A669 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0BE0BC715B619330068A669 /* Carbon.framework in Frameworks */,
+				D0BE0BC815B619330068A669 /* Cocoa.framework in Frameworks */,
+				D0BE0BC915B619420068A669 /* QuickTime.framework in Frameworks */,
+				D0BE0BCA15B619500068A669 /* libStanfordCPPLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0CC84DD15B848300063E32A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0CC84DE15B848300063E32A /* Cocoa.framework in Frameworks */,
+				D0CC84DF15B848300063E32A /* Carbon.framework in Frameworks */,
+				D0CC84E015B848300063E32A /* QuickTime.framework in Frameworks */,
+				D0CC84E115B848300063E32A /* libStanfordCPPLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0CC858915B86EE40063E32A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0CC858A15B86EE40063E32A /* Cocoa.framework in Frameworks */,
+				D0CC858B15B86EE40063E32A /* Carbon.framework in Frameworks */,
+				D0CC858C15B86EE40063E32A /* QuickTime.framework in Frameworks */,
+				D0CC858D15B86EE40063E32A /* libStanfordCPPLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0CC85D815B878E80063E32A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0CC85D915B878E80063E32A /* Cocoa.framework in Frameworks */,
+				D0CC85DA15B878E80063E32A /* Carbon.framework in Frameworks */,
+				D0CC85DB15B878E80063E32A /* QuickTime.framework in Frameworks */,
+				D0CC85DC15B878E80063E32A /* libStanfordCPPLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0F1AC8315B7A9BE007397FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F1AC8415B7A9BE007397FA /* Cocoa.framework in Frameworks */,
+				D0F1AC8515B7A9BE007397FA /* Carbon.framework in Frameworks */,
+				D0F1AC8615B7A9BE007397FA /* QuickTime.framework in Frameworks */,
+				D0F1AC8715B7A9BE007397FA /* libStanfordCPPLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0BE0BC215B619260068A669 /* Assignment.1.2.app */,
+				D082B07D15B61BBE00F9679F /* BlankProject.app */,
+				D010D02D15B647EA004E5457 /* BlankProject.app */,
+				D010D0C215B654EA004E5457 /* BlankProject.app */,
+				D010D11315B65E90004E5457 /* BlankProject.app */,
+				D010D24215B6F709004E5457 /* BlankProject.app */,
+				D010D39315B77216004E5457 /* BlankProject.app */,
+				D010D3C415B7737F004E5457 /* BlankProject.app */,
+				D010D44F15B79CE5004E5457 /* BlankProject.app */,
+				D0F1AC8A15B7A9BE007397FA /* BlankProject.app */,
+				D0CC84E415B848300063E32A /* BlankProject.app */,
+				D0CC859015B86EE40063E32A /* BlankProject.app */,
+				D0CC85DF15B878E80063E32A /* BlankProject.app */,
+				D095115915B889C20075B085 /* BlankProject.app */,
+				D095117B15B88BFC0075B085 /* BlankProject.app */,
+				D095119515B88C010075B085 /* BlankProject.app */,
+				D09511AF15B88C070075B085 /* BlankProject.app */,
+				D09511BC15B88C380075B085 /* BlankProject.app */,
+				D09511C915B88C490075B085 /* BlankProject.app */,
+				D09511D615B88C490075B085 /* BlankProject.app */,
+				D09511E315B88C490075B085 /* BlankProject.app */,
+				D09511F015B88C4A0075B085 /* BlankProject.app */,
+				D09511FD15B88C4A0075B085 /* BlankProject.app */,
+				D095120A15B88C4A0075B085 /* BlankProject.app */,
+				D095121715B88C4A0075B085 /* BlankProject.app */,
+				D095122415B88C4A0075B085 /* BlankProject.app */,
+				D095123115B88C4A0075B085 /* BlankProject.app */,
+				D095124015B88C610075B085 /* BlankProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* ConsecutiveHeads */ = {
+			isa = PBXGroup;
+			children = (
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				D0BE0BB115B618FC0068A669 /* BlankProject.cpp */,
+				D010D02115B647C9004E5457 /* Exercise.3.3.cpp */,
+				A8E07053140DD7F70047C0C8 /* Exercise.3.5.cpp */,
+				D010D0B615B654DE004E5457 /* Exercise.3.16.cpp */,
+				D010D10515B65D93004E5457 /* Exercise.3.20.cpp */,
+				D010D23615B6F6E4004E5457 /* Exercise.4.4.cpp */,
+				D010D37615B77186004E5457 /* Exercise.4.5.cpp */,
+				D010D3C815B773AF004E5457 /* Exercise.4.8.cpp */,
+				D010D45215B79D15004E5457 /* Exercise.4.9.cpp */,
+				D0F1AC8D15B7A9EA007397FA /* Exercise.4.10.cpp */,
+				D0CC84E815B8486C0063E32A /* Exercise.4.11.cpp */,
+				D095124F15B88E840075B085 /* Exercise.5.1.cpp */,
+				D095126615B893820075B085 /* Exercise.5.2.cpp */,
+				D001756B15B8F14900959129 /* Exercise.5.4.cpp */,
+				D00175FC15B8FE6B00959129 /* Exercise.5.6.cpp */,
+				D02B8F7C15B97E300076E479 /* Exercise.5.8.cpp */,
+				D0FBC1CF15B9C0A50060EF62 /* Exercise.5.9.cpp */,
+				D0FBC54715BA2D510060EF62 /* Exercise.5.13.cpp */,
+				D0FBC57515BA30200060EF62 /* Exercise.5.14.cpp */,
+				D0FBC5C915BA35130060EF62 /* Exercise.5.15.cpp */,
+				D0FBC65815BA480A0060EF62 /* Exercise.5.16.cpp */,
+			);
+			name = ConsecutiveHeads;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */,
+				E3DDB4060D2F5EB100348E1D /* Carbon.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D010D02215B647EA004E5457 /* Exercise.3.5 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D010D02B15B647EA004E5457 /* Build configuration list for PBXNativeTarget "Exercise.3.5" */;
+			buildPhases = (
+				D010D02315B647EA004E5457 /* Resources */,
+				D010D02415B647EA004E5457 /* Sources */,
+				D010D02615B647EA004E5457 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Exercise.3.5;
+			productInstallPath = "$(HOME)/Applications";
+			productName = ConsecutiveHeads;
+			productReference = D010D02D15B647EA004E5457 /* BlankProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D010D0B715B654EA004E5457 /* Exercise.3.16 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D010D0C015B654EA004E5457 /* Build configuration list for PBXNativeTarget "Exercise.3.16" */;
+			buildPhases = (
+				D010D0B815B654EA004E5457 /* Resources */,
+				D010D0B915B654EA004E5457 /* Sources */,
+				D010D0BB15B654EA004E5457 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D095113715B888F50075B085 /* PBXTargetDependency */,
+			);
+			name = Exercise.3.16;
+			productInstallPath = "$(HOME)/Applications";
+			productName = ConsecutiveHeads;
+			productReference = D010D0C215B654EA004E5457 /* BlankProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D010D10815B65E90004E5457 /* Exercise.3.20 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D010D11115B65E90004E5457 /* Build configuration list for PBXNativeTarget "Exercise.3.20" */;
+			buildPhases = (
+				D010D10915B65E90004E5457 /* Resources */,
+				D010D10A15B65E90004E5457 /* Sources */,
+				D010D10C15B65E90004E5457 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Exercise.3.20;
+			productInstallPath = "$(HOME)/Applications";
+			productName = ConsecutiveHeads;
+			productReference = D010D11315B65E90004E5457 /* BlankProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D010D23715B6F709004E5457 /* Exercise.4.4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D010D24015B6F709004E5457 /* Build configuration list for PBXNativeTarget "Exercise.4.4" */;
+			buildPhases = (
+				D010D23815B6F709004E5457 /* Resources */,
+				D010D23915B6F709004E5457 /* Sources */,
+				D010D23B15B6F709004E5457 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Exercise.4.4;
+			productInstallPath = "$(HOME)/Applications";
+			productName = ConsecutiveHeads;
+			productReference = D010D24215B6F709004E5457 /* BlankProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D010D38815B77216004E5457 /* Exercise.4.5 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D010D39115B77216004E5457 /* Build configuration list for PBXNativeTarget "Exercise.4.5" */;
+			buildPhases = (
+				D010D38915B77216004E5457 /* Resources */,
+				D010D38A15B77216004E5457 /* Sources */,
+				D010D38C15B77216004E5457 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D095113515B888D20075B085 /* PBXTargetDependency */,
+			);
+			name = Exercise.4.5;
+			productInstallPath = "$(HOME)/Applications";
+			productName = ConsecutiveHeads;
+			productReference = D010D39315B77216004E5457 /* BlankProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D010D3B915B7737F004E5457 /* Exercise.4.8 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D010D3C215B7737F004E5457 /* Build configuration list for PBXNativeTarget "Exercise.4.8" */;
+			buildPhases = (
+				D010D3BA15B7737F004E5457 /* Resources */,
+				D010D3BB15B7737F004E5457 /* Sources */,
+				D010D3BD15B7737F004E5457 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Exercise.4.8;
+			productInstallPath = "$(HOME)/Applications";
+			productName = ConsecutiveHeads;
+			productReference = D010D3C415B7737F004E5457 /* BlankProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D010D44415B79CE5004E5457 /* Exercise.4.9 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D010D44D15B79CE5004E5457 /* Build configuration list for PBXNativeTarget "Exercise.4.9" */;
+			buildPhases = (
+				D010D44515B79CE5004E5457 /* Resources */,
+				D010D44615B79CE5004E5457 /* Sources */,
+				D010D44815B79CE5004E5457 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Exercise.4.9;
+			productInstallPath = "$(HOME)/Applications";
+			productName = ConsecutiveHeads;
+			productReference = D010D44F15B79CE5004E5457 /* BlankProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D082B07215B61BBE00F9679F /* Exercise.3.3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D082B07B15B61BBE00F9679F /* Build configuration list for PBXNativeTarget "Exercise.3.3" */;
+			buildPhases = (
+				D082B07315B61BBE00F9679F /* Resources */,
+				D082B07415B61BBE00F9679F /* Sources */,
+				D082B07615B61BBE00F9679F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Exercise.3.3;
+			productInstallPath = "$(HOME)/Applications";
+			productName = ConsecutiveHeads;
+			productReference = D082B07D15B61BBE00F9679F /* BlankProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D095114E15B889C20075B085 /* Exercise.5.2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D095115715B889C20075B085 /* Build configuration list for PBXNativeTarget "Exercise.5.2" */;
+			buildPhases = (
+				D095114F15B889C20075B085 /* Resources */,
+				D095115015B889C20075B085 /* Sources */,
+				D095115215B889C20075B085 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Exercise.5.2;
+			productInstallPath = "$(HOME)/Applications";
+			productName = ConsecutiveHeads;
+			productReference = D095115915B889C20075B085 /* BlankProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D095117115B88BFC0075B085 /* Exercise.5.4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D095117915B88BFC0075B085 /* Build configuration list for PBXNativeTarget "Exercise.5.4" */;
+			buildPhases = (
+				D095117215B88BFC0075B085 /* Resources */,
+				D095117315B88BFC0075B085 /* Sources */,
+				D095117415B88BFC0075B085 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Exercise.5.4;
+			productInstallPath = "$(HOME)/Applications";
+			productName = ConsecutiveHeads;
+			productReference = D095117B15B88BFC0075B085 /* BlankProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D095118B15B88C010075B085 /* Exercise.5.6 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D095119315B88C010075B085 /* Build configuration list for PBXNativeTarget "Exercise.5.6" */;
+			buildPhases = (
+				D095118C15B88C010075B085 /* Resources */,
+				D095118D15B88C010075B085 /* Sources */,
+				D095118E15B88C010075B085 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Exercise.5.6;
+			productInstallPath = "$(HOME)/Applications";
+			productName = ConsecutiveHeads;
+			productReference = D095119515B88C010075B085 /* BlankProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D09511A515B88C070075B085 /* Exercise.5.8 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D09511AD15B88C070075B085 /* Build configuration list for PBXNativeTarget "Exercise.5.8" */;
+			buildPhases = (
+				D09511A615B88C070075B085 /* Resources */,
+				D09511A715B88C070075B085 /* Sources */,
+				D09511A815B88C070075B085 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Exercise.5.8;
+			productInstallPath = "$(HOME)/Applications";
+			productName = ConsecutiveHeads;
+			productReference = D09511AF15B88C070075B085 /* BlankProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D09511B215B88C380075B085 /* Exercise.5.9 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D09511BA15B88C380075B085 /* Build configuration list for PBXNativeTarget "Exercise.5.9" */;
+			buildPhases = (
+				D09511B315B88C380075B085 /* Resources */,
+				D09511B415B88C380075B085 /* Sources */,
+				D09511B515B88C380075B085 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Exercise.5.9;
+			productInstallPath = "$(HOME)/Applications";
+			productName = ConsecutiveHeads;
+			productReference = D09511BC15B88C380075B085 /* BlankProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D09511BF15B88C490075B085 /* Exercise.5.20 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D09511C715B88C490075B085 /* Build configuration list for PBXNativeTarget "Exercise.5.20" */;
+			buildPhases = (
+				D09511C015B88C490075B085 /* Resources */,
+				D09511C115B88C490075B085 /* Sources */,
+				D09511C215B88C490075B085 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Exercise.5.20;
+			productInstallPath = "$(HOME)/Applications";
+			productName = ConsecutiveHeads;
+			productReference = D09511C915B88C490075B085 /* BlankProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D09511CC15B88C490075B085 /* Exercise.5.22 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D09511D415B88C490075B085 /* Build configuration list for PBXNativeTarget "Exercise.5.22" */;
+			buildPhases = (
+				D09511CD15B88C490075B085 /* Resources */,
+				D09511CE15B88C490075B085 /* Sources */,
+				D09511CF15B88C490075B085 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Exercise.5.22;
+			productInstallPath = "$(HOME)/Applications";
+			productName = ConsecutiveHeads;
+			productReference = D09511D615B88C490075B085 /* BlankProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D09511D915B88C490075B085 /* Exercise.5.13 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D09511E115B88C490075B085 /* Build configuration list for PBXNativeTarget "Exercise.5.13" */;
+			buildPhases = (
+				D09511DA15B88C490075B085 /* Resources */,
+				D09511DB15B88C490075B085 /* Sources */,
+				D09511DC15B88C490075B085 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Exercise.5.13;
+			productInstallPath = "$(HOME)/Applications";
+			productName = ConsecutiveHeads;
+			productReference = D09511E315B88C490075B085 /* BlankProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D09511E615B88C4A0075B085 /* Exercise.5.14 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D09511EE15B88C4A0075B085 /* Build configuration list for PBXNativeTarget "Exercise.5.14" */;
+			buildPhases = (
+				D09511E715B88C4A0075B085 /* Resources */,
+				D09511E815B88C4A0075B085 /* Sources */,
+				D09511E915B88C4A0075B085 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Exercise.5.14;
+			productInstallPath = "$(HOME)/Applications";
+			productName = ConsecutiveHeads;
+			productReference = D09511F015B88C4A0075B085 /* BlankProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D09511F315B88C4A0075B085 /* Exercise.5.15 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D09511FB15B88C4A0075B085 /* Build configuration list for PBXNativeTarget "Exercise.5.15" */;
+			buildPhases = (
+				D09511F415B88C4A0075B085 /* Resources */,
+				D09511F515B88C4A0075B085 /* Sources */,
+				D09511F615B88C4A0075B085 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Exercise.5.15;
+			productInstallPath = "$(HOME)/Applications";
+			productName = ConsecutiveHeads;
+			productReference = D09511FD15B88C4A0075B085 /* BlankProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D095120015B88C4A0075B085 /* Exercise.5.16 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D095120815B88C4A0075B085 /* Build configuration list for PBXNativeTarget "Exercise.5.16" */;
+			buildPhases = (
+				D095120115B88C4A0075B085 /* Resources */,
+				D095120215B88C4A0075B085 /* Sources */,
+				D095120315B88C4A0075B085 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Exercise.5.16;
+			productInstallPath = "$(HOME)/Applications";
+			productName = ConsecutiveHeads;
+			productReference = D095120A15B88C4A0075B085 /* BlankProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D095120D15B88C4A0075B085 /* Exercise.5.17 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D095121515B88C4A0075B085 /* Build configuration list for PBXNativeTarget "Exercise.5.17" */;
+			buildPhases = (
+				D095120E15B88C4A0075B085 /* Resources */,
+				D095120F15B88C4A0075B085 /* Sources */,
+				D095121015B88C4A0075B085 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Exercise.5.17;
+			productInstallPath = "$(HOME)/Applications";
+			productName = ConsecutiveHeads;
+			productReference = D095121715B88C4A0075B085 /* BlankProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D095121A15B88C4A0075B085 /* Exercise.5.18 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D095122215B88C4A0075B085 /* Build configuration list for PBXNativeTarget "Exercise.5.18" */;
+			buildPhases = (
+				D095121B15B88C4A0075B085 /* Resources */,
+				D095121C15B88C4A0075B085 /* Sources */,
+				D095121D15B88C4A0075B085 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Exercise.5.18;
+			productInstallPath = "$(HOME)/Applications";
+			productName = ConsecutiveHeads;
+			productReference = D095122415B88C4A0075B085 /* BlankProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D095122715B88C4A0075B085 /* Exercise.5.19 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D095122F15B88C4A0075B085 /* Build configuration list for PBXNativeTarget "Exercise.5.19" */;
+			buildPhases = (
+				D095122815B88C4A0075B085 /* Resources */,
+				D095122915B88C4A0075B085 /* Sources */,
+				D095122A15B88C4A0075B085 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Exercise.5.19;
+			productInstallPath = "$(HOME)/Applications";
+			productName = ConsecutiveHeads;
+			productReference = D095123115B88C4A0075B085 /* BlankProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D095123615B88C610075B085 /* Exercise.5.21 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D095123E15B88C610075B085 /* Build configuration list for PBXNativeTarget "Exercise.5.21" */;
+			buildPhases = (
+				D095123715B88C610075B085 /* Resources */,
+				D095123815B88C610075B085 /* Sources */,
+				D095123915B88C610075B085 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Exercise.5.21;
+			productInstallPath = "$(HOME)/Applications";
+			productName = ConsecutiveHeads;
+			productReference = D095124015B88C610075B085 /* BlankProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0BE0BC115B619260068A669 /* Assignment.1.2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0BE0BC615B619260068A669 /* Build configuration list for PBXNativeTarget "Assignment.1.2" */;
+			buildPhases = (
+				D0BE0BBE15B619260068A669 /* Resources */,
+				D0BE0BBF15B619260068A669 /* Sources */,
+				D0BE0BC015B619260068A669 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Assignment.1.2;
+			productName = Assignment.1.2;
+			productReference = D0BE0BC215B619260068A669 /* Assignment.1.2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0CC84D915B848300063E32A /* Exercise.4.11 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0CC84E215B848300063E32A /* Build configuration list for PBXNativeTarget "Exercise.4.11" */;
+			buildPhases = (
+				D0CC84DA15B848300063E32A /* Resources */,
+				D0CC84DB15B848300063E32A /* Sources */,
+				D0CC84DD15B848300063E32A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Exercise.4.11;
+			productInstallPath = "$(HOME)/Applications";
+			productName = ConsecutiveHeads;
+			productReference = D0CC84E415B848300063E32A /* BlankProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0CC858515B86EE40063E32A /* Exercise.5.1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0CC858E15B86EE40063E32A /* Build configuration list for PBXNativeTarget "Exercise.5.1" */;
+			buildPhases = (
+				D0CC858615B86EE40063E32A /* Resources */,
+				D0CC858715B86EE40063E32A /* Sources */,
+				D0CC858915B86EE40063E32A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Exercise.5.1;
+			productInstallPath = "$(HOME)/Applications";
+			productName = ConsecutiveHeads;
+			productReference = D0CC859015B86EE40063E32A /* BlankProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0CC85D415B878E80063E32A /* BlankProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0CC85DD15B878E80063E32A /* Build configuration list for PBXNativeTarget "BlankProject" */;
+			buildPhases = (
+				D0CC85D515B878E80063E32A /* Resources */,
+				D0CC85D615B878E80063E32A /* Sources */,
+				D0CC85D815B878E80063E32A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlankProject;
+			productInstallPath = "$(HOME)/Applications";
+			productName = ConsecutiveHeads;
+			productReference = D0CC85DF15B878E80063E32A /* BlankProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0F1AC7F15B7A9BE007397FA /* Exercise.4.10 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0F1AC8815B7A9BE007397FA /* Build configuration list for PBXNativeTarget "Exercise.4.10" */;
+			buildPhases = (
+				D0F1AC8015B7A9BE007397FA /* Resources */,
+				D0F1AC8115B7A9BE007397FA /* Sources */,
+				D0F1AC8315B7A9BE007397FA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Exercise.4.10;
+			productInstallPath = "$(HOME)/Applications";
+			productName = ConsecutiveHeads;
+			productReference = D0F1AC8A15B7A9BE007397FA /* BlankProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "BlankProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* ConsecutiveHeads */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0CC85D415B878E80063E32A /* BlankProject */,
+				D0BE0BC115B619260068A669 /* Assignment.1.2 */,
+				D082B07215B61BBE00F9679F /* Exercise.3.3 */,
+				D010D02215B647EA004E5457 /* Exercise.3.5 */,
+				D010D0B715B654EA004E5457 /* Exercise.3.16 */,
+				D010D10815B65E90004E5457 /* Exercise.3.20 */,
+				D010D23715B6F709004E5457 /* Exercise.4.4 */,
+				D010D38815B77216004E5457 /* Exercise.4.5 */,
+				D010D3B915B7737F004E5457 /* Exercise.4.8 */,
+				D010D44415B79CE5004E5457 /* Exercise.4.9 */,
+				D0F1AC7F15B7A9BE007397FA /* Exercise.4.10 */,
+				D0CC84D915B848300063E32A /* Exercise.4.11 */,
+				D0CC858515B86EE40063E32A /* Exercise.5.1 */,
+				D095114E15B889C20075B085 /* Exercise.5.2 */,
+				D095117115B88BFC0075B085 /* Exercise.5.4 */,
+				D095118B15B88C010075B085 /* Exercise.5.6 */,
+				D09511A515B88C070075B085 /* Exercise.5.8 */,
+				D09511B215B88C380075B085 /* Exercise.5.9 */,
+				D09511D915B88C490075B085 /* Exercise.5.13 */,
+				D09511E615B88C4A0075B085 /* Exercise.5.14 */,
+				D09511F315B88C4A0075B085 /* Exercise.5.15 */,
+				D095120015B88C4A0075B085 /* Exercise.5.16 */,
+				D095120D15B88C4A0075B085 /* Exercise.5.17 */,
+				D095121A15B88C4A0075B085 /* Exercise.5.18 */,
+				D095122715B88C4A0075B085 /* Exercise.5.19 */,
+				D09511BF15B88C490075B085 /* Exercise.5.20 */,
+				D095123615B88C610075B085 /* Exercise.5.21 */,
+				D09511CC15B88C490075B085 /* Exercise.5.22 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D010D02315B647EA004E5457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D010D0B815B654EA004E5457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D010D10915B65E90004E5457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D010D23815B6F709004E5457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D010D38915B77216004E5457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D010D3BA15B7737F004E5457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D010D44515B79CE5004E5457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D082B07315B61BBE00F9679F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D095114F15B889C20075B085 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D095117215B88BFC0075B085 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D095118C15B88C010075B085 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D09511A615B88C070075B085 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D09511B315B88C380075B085 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D09511C015B88C490075B085 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D09511CD15B88C490075B085 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D09511DA15B88C490075B085 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D09511E715B88C4A0075B085 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D09511F415B88C4A0075B085 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D095120115B88C4A0075B085 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D095120E15B88C4A0075B085 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D095121B15B88C4A0075B085 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D095122815B88C4A0075B085 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D095123715B88C610075B085 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0BE0BBE15B619260068A669 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0CC84DA15B848300063E32A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0CC858615B86EE40063E32A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0CC85D515B878E80063E32A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0F1AC8015B7A9BE007397FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D010D02415B647EA004E5457 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D010D02515B647EA004E5457 /* Exercise.3.5.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D010D0B915B654EA004E5457 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D010D0C515B65500004E5457 /* Exercise.3.16.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D010D10A15B65E90004E5457 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D010D11615B65F1E004E5457 /* Exercise.3.20.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D010D23915B6F709004E5457 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D010D24515B6F722004E5457 /* Exercise.4.4.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D010D38A15B77216004E5457 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D010D39615B7723B004E5457 /* Exercise.4.5.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D010D3BB15B7737F004E5457 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D010D3C915B773AF004E5457 /* Exercise.4.8.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D010D44615B79CE5004E5457 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D010D45315B79D15004E5457 /* Exercise.4.9.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D082B07415B61BBE00F9679F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D010D05915B64957004E5457 /* Exercise.3.3.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D095115015B889C20075B085 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D095126715B893820075B085 /* Exercise.5.2.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D095117315B88BFC0075B085 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D001756C15B8F14900959129 /* Exercise.5.4.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D095118D15B88C010075B085 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D02B8F7E15B97E500076E479 /* Exercise.5.6.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D09511A715B88C070075B085 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D02B8F7D15B97E300076E479 /* Exercise.5.8.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D09511B415B88C380075B085 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0FBC1D015B9C0A50060EF62 /* Exercise.5.9.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D09511C115B88C490075B085 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D09511CE15B88C490075B085 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D09511DB15B88C490075B085 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0FBC54815BA2D510060EF62 /* Exercise.5.13.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D09511E815B88C4A0075B085 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0FBC57615BA30200060EF62 /* Exercise.5.14.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D09511F515B88C4A0075B085 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0FBC5CA15BA35130060EF62 /* Exercise.5.15.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D095120215B88C4A0075B085 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0FBC65915BA480A0060EF62 /* Exercise.5.16.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D095120F15B88C4A0075B085 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D095121C15B88C4A0075B085 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D095122915B88C4A0075B085 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D095123815B88C610075B085 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0BE0BBF15B619260068A669 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0BE0BCB15B6196E0068A669 /* Exercise.3.5.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0CC84DB15B848300063E32A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0CC84E915B8486C0063E32A /* Exercise.4.11.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0CC858715B86EE40063E32A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D095125015B88E840075B085 /* Exercise.5.1.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0CC85D615B878E80063E32A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0CC85D715B878E80063E32A /* BlankProject.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0F1AC8115B7A9BE007397FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F1AC8E15B7A9EA007397FA /* Exercise.4.10.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D095113515B888D20075B085 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D082B07215B61BBE00F9679F /* Exercise.3.3 */;
+			targetProxy = D095113415B888D20075B085 /* PBXContainerItemProxy */;
+		};
+		D095113715B888F50075B085 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D082B07215B61BBE00F9679F /* Exercise.3.3 */;
+			targetProxy = D095113615B888F50075B085 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = .;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = StanfordCPPLib;
+				OTHER_CFLAGS = "-fstack-check";
+				PREBINDING = NO;
+				SDKROOT = "";
+				USER_HEADER_SEARCH_PATHS = StanfordCPPLib;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wno-sign-compare",
+				);
+			};
+			name = Debug;
+		};
+		D010D02C15B647EA004E5457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/StanfordCPPLib\"";
+				PRODUCT_NAME = BlankProject;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		D010D0C115B654EA004E5457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/StanfordCPPLib\"";
+				PRODUCT_NAME = BlankProject;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		D010D11215B65E90004E5457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/StanfordCPPLib\"";
+				PRODUCT_NAME = BlankProject;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		D010D24115B6F709004E5457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/StanfordCPPLib\"";
+				PRODUCT_NAME = BlankProject;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		D010D39215B77216004E5457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/StanfordCPPLib\"";
+				PRODUCT_NAME = BlankProject;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		D010D3C315B7737F004E5457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/StanfordCPPLib\"";
+				PRODUCT_NAME = BlankProject;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		D010D44E15B79CE5004E5457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/StanfordCPPLib\"";
+				PRODUCT_NAME = BlankProject;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		D082B07C15B61BBE00F9679F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "Info copy.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/StanfordCPPLib\"";
+				PRODUCT_NAME = BlankProject;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		D095115815B889C20075B085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/StanfordCPPLib\"";
+				PRODUCT_NAME = BlankProject;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		D095117A15B88BFC0075B085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/StanfordCPPLib\"";
+				PRODUCT_NAME = BlankProject;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		D095119415B88C010075B085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/StanfordCPPLib\"";
+				PRODUCT_NAME = BlankProject;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		D09511AE15B88C070075B085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/StanfordCPPLib\"";
+				PRODUCT_NAME = BlankProject;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		D09511BB15B88C380075B085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/StanfordCPPLib\"";
+				PRODUCT_NAME = BlankProject;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		D09511C815B88C490075B085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "Info copy 12.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/StanfordCPPLib\"";
+				PRODUCT_NAME = BlankProject;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		D09511D515B88C490075B085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "Info copy 13.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/StanfordCPPLib\"";
+				PRODUCT_NAME = BlankProject;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		D09511E215B88C490075B085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/StanfordCPPLib\"";
+				PRODUCT_NAME = BlankProject;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		D09511EF15B88C4A0075B085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/StanfordCPPLib\"";
+				PRODUCT_NAME = BlankProject;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		D09511FC15B88C4A0075B085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/StanfordCPPLib\"";
+				PRODUCT_NAME = BlankProject;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		D095120915B88C4A0075B085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/StanfordCPPLib\"";
+				PRODUCT_NAME = BlankProject;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		D095121615B88C4A0075B085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "Info copy 18.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/StanfordCPPLib\"";
+				PRODUCT_NAME = BlankProject;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		D095122315B88C4A0075B085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/StanfordCPPLib\"";
+				PRODUCT_NAME = BlankProject;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		D095123015B88C4A0075B085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/StanfordCPPLib\"";
+				PRODUCT_NAME = BlankProject;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		D095123F15B88C610075B085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "Info copy 21.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/StanfordCPPLib\"";
+				PRODUCT_NAME = BlankProject;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		D0BE0BC515B619260068A669 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/StanfordCPPLib\"",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/StanfordCPPLib\"";
+				PREBINDING = NO;
+				PRODUCT_NAME = Assignment.1.2;
+			};
+			name = Debug;
+		};
+		D0CC84E315B848300063E32A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/StanfordCPPLib\"";
+				PRODUCT_NAME = BlankProject;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		D0CC858F15B86EE40063E32A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/StanfordCPPLib\"";
+				PRODUCT_NAME = BlankProject;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		D0CC85DE15B878E80063E32A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/StanfordCPPLib\"";
+				PRODUCT_NAME = BlankProject;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		D0F1AC8915B7A9BE007397FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/StanfordCPPLib\"";
+				PRODUCT_NAME = BlankProject;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "BlankProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D010D02B15B647EA004E5457 /* Build configuration list for PBXNativeTarget "Exercise.3.5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D010D02C15B647EA004E5457 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D010D0C015B654EA004E5457 /* Build configuration list for PBXNativeTarget "Exercise.3.16" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D010D0C115B654EA004E5457 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D010D11115B65E90004E5457 /* Build configuration list for PBXNativeTarget "Exercise.3.20" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D010D11215B65E90004E5457 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D010D24015B6F709004E5457 /* Build configuration list for PBXNativeTarget "Exercise.4.4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D010D24115B6F709004E5457 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D010D39115B77216004E5457 /* Build configuration list for PBXNativeTarget "Exercise.4.5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D010D39215B77216004E5457 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D010D3C215B7737F004E5457 /* Build configuration list for PBXNativeTarget "Exercise.4.8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D010D3C315B7737F004E5457 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D010D44D15B79CE5004E5457 /* Build configuration list for PBXNativeTarget "Exercise.4.9" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D010D44E15B79CE5004E5457 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D082B07B15B61BBE00F9679F /* Build configuration list for PBXNativeTarget "Exercise.3.3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D082B07C15B61BBE00F9679F /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D095115715B889C20075B085 /* Build configuration list for PBXNativeTarget "Exercise.5.2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D095115815B889C20075B085 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D095117915B88BFC0075B085 /* Build configuration list for PBXNativeTarget "Exercise.5.4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D095117A15B88BFC0075B085 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D095119315B88C010075B085 /* Build configuration list for PBXNativeTarget "Exercise.5.6" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D095119415B88C010075B085 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D09511AD15B88C070075B085 /* Build configuration list for PBXNativeTarget "Exercise.5.8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D09511AE15B88C070075B085 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D09511BA15B88C380075B085 /* Build configuration list for PBXNativeTarget "Exercise.5.9" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D09511BB15B88C380075B085 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D09511C715B88C490075B085 /* Build configuration list for PBXNativeTarget "Exercise.5.20" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D09511C815B88C490075B085 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D09511D415B88C490075B085 /* Build configuration list for PBXNativeTarget "Exercise.5.22" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D09511D515B88C490075B085 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D09511E115B88C490075B085 /* Build configuration list for PBXNativeTarget "Exercise.5.13" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D09511E215B88C490075B085 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D09511EE15B88C4A0075B085 /* Build configuration list for PBXNativeTarget "Exercise.5.14" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D09511EF15B88C4A0075B085 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D09511FB15B88C4A0075B085 /* Build configuration list for PBXNativeTarget "Exercise.5.15" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D09511FC15B88C4A0075B085 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D095120815B88C4A0075B085 /* Build configuration list for PBXNativeTarget "Exercise.5.16" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D095120915B88C4A0075B085 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D095121515B88C4A0075B085 /* Build configuration list for PBXNativeTarget "Exercise.5.17" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D095121615B88C4A0075B085 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D095122215B88C4A0075B085 /* Build configuration list for PBXNativeTarget "Exercise.5.18" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D095122315B88C4A0075B085 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D095122F15B88C4A0075B085 /* Build configuration list for PBXNativeTarget "Exercise.5.19" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D095123015B88C4A0075B085 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D095123E15B88C610075B085 /* Build configuration list for PBXNativeTarget "Exercise.5.21" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D095123F15B88C610075B085 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D0BE0BC615B619260068A669 /* Build configuration list for PBXNativeTarget "Assignment.1.2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0BE0BC515B619260068A669 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D0CC84E215B848300063E32A /* Build configuration list for PBXNativeTarget "Exercise.4.11" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0CC84E315B848300063E32A /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D0CC858E15B86EE40063E32A /* Build configuration list for PBXNativeTarget "Exercise.5.1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0CC858F15B86EE40063E32A /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D0CC85DD15B878E80063E32A /* Build configuration list for PBXNativeTarget "BlankProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0CC85DE15B878E80063E32A /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D0F1AC8815B7A9BE007397FA /* Build configuration list for PBXNativeTarget "Exercise.4.10" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0F1AC8915B7A9BE007397FA /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

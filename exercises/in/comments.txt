@@ -1,0 +1,12 @@
+This is some code
+And this // is a later comment
+
+And we're going on 
+And on
+
+  /* while this
+ is commented out*/
+
+but this remains good
+
+and /*this */ should disappear
