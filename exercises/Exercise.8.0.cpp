@@ -122,7 +122,7 @@ void turn(Map<string, Vector<int> > & towers, string t1, string t2) {
 }
 
 void moveTower(Map<string, Vector<int> > & towers, int n, string start, string end, string tmp) {
-	if (n == 1) {
+	if (n == 0) {
 		turn(towers, start, end);
 	} else {
 		moveTower(towers, n-1, start, tmp, end);
@@ -133,7 +133,7 @@ void moveTower(Map<string, Vector<int> > & towers, int n, string start, string e
 
 int main() {
 	
-	Map<string, Vector<int> > towers = buildGame(3, 2);
+	Map<string, Vector<int> > towers = buildGame(3, 8);
 		
 	drawGame(towers);
 	
