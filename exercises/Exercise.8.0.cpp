@@ -1,8 +1,5 @@
 /*
- * File: BlankProject.cpp
- * --------------------------
- * You can use this file as a starter for 
- * testing things out that aren't assignments.
+ * Tower of Hanoi
  */
 
 #include <iostream>
