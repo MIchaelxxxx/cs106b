@@ -187,6 +187,7 @@
 		D0E4924115C70AFA0050B609 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */; };
 		D0E4924215C70AFA0050B609 /* libStanfordCPPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4110D2F60C500348E1D /* libStanfordCPPLib.a */; };
 		D0E4924D15C70B390050B609 /* Assignment.2.1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0E4924C15C70B390050B609 /* Assignment.2.1.cpp */; };
+		D0E4947E15C86BFE0050B609 /* Exercise.9.0.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0E4947D15C86BFE0050B609 /* Exercise.9.0.cpp */; };
 		D0F1AC8415B7A9BE007397FA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		D0F1AC8515B7A9BE007397FA /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB4060D2F5EB100348E1D /* Carbon.framework */; };
 		D0F1AC8615B7A9BE007397FA /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DDB40B0D2F5EBE00348E1D /* QuickTime.framework */; };
@@ -295,6 +296,7 @@
 		D0E4923715C70AF50050B609 /* BlankProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlankProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E4924515C70AFA0050B609 /* BlankProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlankProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E4924C15C70B390050B609 /* Assignment.2.1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Assignment.2.1.cpp; sourceTree = "<group>"; };
+		D0E4947D15C86BFE0050B609 /* Exercise.9.0.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exercise.9.0.cpp; sourceTree = "<group>"; };
 		D0F1AC8A15B7A9BE007397FA /* BlankProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlankProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F1AC8D15B7A9EA007397FA /* Exercise.4.10.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exercise.4.10.cpp; sourceTree = "<group>"; };
 		D0FBC1CF15B9C0A50060EF62 /* Exercise.5.9.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exercise.5.9.cpp; sourceTree = "<group>"; };
@@ -817,6 +819,7 @@
 				D0D94CA115C5DD1C003471E2 /* Exercise.8.10.cpp */,
 				D0E48F5F15C6EF4D0050B609 /* Exercise.8.11.cpp */,
 				D0E490A915C6FADF0050B609 /* Exercise.8.12.cpp */,
+				D0E4947D15C86BFE0050B609 /* Exercise.9.0.cpp */,
 			);
 			name = ConsecutiveHeads;
 			sourceTree = "<group>";
@@ -1494,9 +1497,9 @@
 			productReference = D0E4923715C70AF50050B609 /* BlankProject.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D0E4923A15C70AFA0050B609 /* Assignment.2.2 */ = {
+		D0E4923A15C70AFA0050B609 /* Exercise.9.0 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D0E4924315C70AFA0050B609 /* Build configuration list for PBXNativeTarget "Assignment.2.2" */;
+			buildConfigurationList = D0E4924315C70AFA0050B609 /* Build configuration list for PBXNativeTarget "Exercise.9.0" */;
 			buildPhases = (
 				D0E4923B15C70AFA0050B609 /* Resources */,
 				D0E4923C15C70AFA0050B609 /* Sources */,
@@ -1506,7 +1509,7 @@
 			);
 			dependencies = (
 			);
-			name = Assignment.2.2;
+			name = Exercise.9.0;
 			productInstallPath = "$(HOME)/Applications";
 			productName = ConsecutiveHeads;
 			productReference = D0E4924515C70AFA0050B609 /* BlankProject.app */;
@@ -1551,7 +1554,6 @@
 			targets = (
 				D0CC85D415B878E80063E32A /* BlankProject */,
 				D0E4922C15C70AF50050B609 /* Assignment.2.1 */,
-				D0E4923A15C70AFA0050B609 /* Assignment.2.2 */,
 				D082B07215B61BBE00F9679F /* Exercise.3.3 */,
 				D010D02215B647EA004E5457 /* Exercise.3.5 */,
 				D010D0B715B654EA004E5457 /* Exercise.3.16 */,
@@ -1587,6 +1589,7 @@
 				D09CA2C615C58A2D00BD8537 /* Exercise.8.10 */,
 				D09CA2D415C58A3200BD8537 /* Exercise.8.11 */,
 				D0E4909B15C6FABF0050B609 /* Exercise.8.12 */,
+				D0E4923A15C70AFA0050B609 /* Exercise.9.0 */,
 			);
 		};
 /* End PBXProject section */
@@ -2153,6 +2156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0E4947E15C86BFE0050B609 /* Exercise.9.0.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3300,7 +3304,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		D0E4924315C70AFA0050B609 /* Build configuration list for PBXNativeTarget "Assignment.2.2" */ = {
+		D0E4924315C70AFA0050B609 /* Build configuration list for PBXNativeTarget "Exercise.9.0" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D0E4924415C70AFA0050B609 /* Debug */,

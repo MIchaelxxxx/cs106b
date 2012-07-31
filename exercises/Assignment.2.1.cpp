@@ -19,71 +19,93 @@ using namespace std;
 
 string letters = "abcdefghijklmnopqrstuvwxyz";
 
-Vector<string> wordsByOneLetter (Lexicon & lex, string str, string target) {
-	Vector<string> words;
-	
-	for (int i = 0; i < str.length(); i++) {
-		if (str[i] == target[i]) continue;
-
-		char orig = str[i];
-		for (int j = 0; j < letters.length(); j++) {
-			if (j == i) continue;
-			str[i] = letters[j];
-			if (lex.contains(str)) {
-				words += str;
-			}
-		}
-		str[i] = orig;
-	}
-	
-	return words;
-}
-
-bool ladderContains(Vector<string> & ladder, string value) {
+bool contains(Vector<string> & ladder, string str) {
 	int i = ladder.size();
 	while (i--) {
-		if (ladder[i] == value) {
+		if (ladder[i] == str) {
 			return true;
 		}
 	}
 	return false;
 }
 
-Vector<string> cloneLadder(Vector<string> ladder) {
-	return ladder;
+Vector<string> clone(Vector<string> ladder) {
+	Vector<string> newLadder;
+	
+	for (int i = 0; i < ladder.size(); i++) {
+		newLadder += ladder[i];
+	}
+	return newLadder;
 }
 
-Vector<string> wordLadder(Lexicon & lex, string start, string end) {
-	Vector<string> l1;
-	l1 += start;
+Vector<string> wordsByOneLetter (Lexicon & lex, string word) {
+	Vector<string> words;
+	string original = word;
+	
+	for (int i = 0; i < word.length(); i++) {
+
+		char originalCh = word[i];
+		
+		for (int j = 0; j < letters.length(); j++) {
+		
+			word[i] = letters[j];
+			
+			if (word == original)
+				continue;
+			
+			if (contains(words, word))
+				continue;
+
+			if (!lex.contains(word))
+				continue;
+				
+			words += word;
+		}
+
+		word[i] = originalCh;
+	}
+	
+	return words;
+}
+
+
+
+Vector<string> wordLadder(Lexicon & lex, string start, string target) {
+
+	Vector<string> startingLadder;
+	startingLadder += start;
 	
 	Queue<Vector <string> > queue;
-	queue.enqueue(l1);
+	queue.enqueue(startingLadder);
+	
+	Vector<string> seen;
 	
 	while(!queue.isEmpty()) {
-		Vector<string> ladder = queue.dequeue();
-		
-		string word = ladder.get(ladder.size() - 1);
+		Vector<string> lastLadder = queue.dequeue();
 
-		if (end == word) {
-			return ladder;
-		}
-		
-		Vector<string> newWords = wordsByOneLetter(lex, word, end);
+		string lastWord = lastLadder.get(lastLadder.size() - 1);
 
-		for (int i = 0; i < newWords.size(); i++) {
-			if (ladderContains(ladder, newWords[i])) {
-				continue;
-			}	
-			Vector<string> newLadder = cloneLadder(ladder);
-			newLadder += newWords[i];
-			queue.enqueue(newLadder);
+		if (lastWord == target)
+			return lastLadder;
+
+		foreach (string word in wordsByOneLetter(lex, lastWord)) {
 			
-			if (queue.size() > 5000)
-				return newLadder;
+			if (contains(lastLadder, word))
+				continue;
+			
+			if (contains(seen, word))
+				continue;
+
+			Vector<string> ladder = clone(lastLadder);
+
+			
+			seen += word;
+			ladder += word;
+				
+			queue.enqueue(ladder);
+			
 		}
 		
-
 	}
 	
 	Vector <string> emptyLadder;
@@ -94,14 +116,29 @@ int main() {
 	
 	Lexicon lex("in/dictionary.txt");
 	
-	string start = "work";
-	string end = "play";
 	
-	Vector<string> ladder = wordLadder(lex, start, end);
-	
-	foreach (string word in ladder) {
-		cout << word << " ";
+	while (true) {
+		string start = getLine("Enter a starting word [or blank to end]: ");
+		if (start == "") break;
+		
+		string end = getLine("Enter a starting word [or blank to quit]: ");		
+		if (end == "") break;
+		
+		cout << "Please wait while I connect '" << start << "' with '" << end << "'" << endl;
+		
+		Vector<string> ladder = wordLadder(lex, start, end);
+		
+		if (ladder.size() == 0) {
+			cout << "No ladder found!" << endl;
+			continue;
+		}
+		
+		foreach (string word in ladder) {
+			cout << word << " ";
+		}
+		cout << endl;
 	}
+
 	
 	return 0;
 }
