@@ -1,123 +1,252 @@
-#include <iostream> 
+/*
+ * File: BlankProject.cpp
+ * --------------------------
+ * You can use this file as a starter for 
+ * testing things out that aren't assignments.
+ */
+
+#include <iostream>
 #include <iomanip>
-#include <string> 
-#include "error.h" 
-#include "simpio.h" 
-#include "strlib.h" 
+#include <string>
+#include "console.h"
+#include "graphics.h"
+#include "strlib.h"
+#include "random.h"
+#include "simpio.h"
+#include "map.h"
 
 using namespace std;
 
 
-const int N_COINS = 13;
-const int MAX_MOVE = 3;
-const int NO_GOOD_MOVE = -1;
-
-enum Player { HUMAN, COMPUTER };
-
-Player opponent(Player player) {
-	return (player == HUMAN) ? COMPUTER : HUMAN;
-}
-
-const Player STARTING_PLAYER = HUMAN;
-
-
-class SimpleNim {
-	
+class Game {
 public:
 	
-	void play() {
-		nCoins = N_COINS;
-		whoseTurn = STARTING_PLAYER;
-		
-		while (nCoins > 1) {
-			cout << "There are " << nCoins << " coins in the pile." << endl;
-			if (whoseTurn == HUMAN) {
-				nCoins -= getUserMove();
-			} else {
-				int nTaken = getComputerMove();
-				cout << "I'll take " << nTaken << "." << endl;
-				nCoins -= nTaken;
-			}
-			whoseTurn = opponent(whoseTurn);
-		}
-		
-		announceResult();
+	Game(int cWidth, int cHeight, int cSize) {
+		width = cWidth;
+		height = cHeight;
+		size = cSize;
+		//Map<int, Piece> board;
 	}
 	
-	void printInstructions() {
-		cout << "Welcome to the game of Nim!" << endl;
-		cout << "In this game, we will start with a pile of" << endl;
-		cout << N_COINS << " coins on the table. On each turn, you" << endl;
-		cout << "and I will alternately take between 1 and" << endl;
-		cout << MAX_MOVE << " coins from the table. The player who" << endl;
-		cout << "takes the last coin loses." << endl << endl;
+	int getSize() {
+		return size;
+	}
+	
+	int getRowSize() {
+		return height / size;
+	}
+	
+	int getColSize() {
+		return width / size;
+	}
+	/*
+	bool pieceExistsAt(int row, int col) {
+		int pos = gridToPos(row, col);
+		return board.containsKey(pos);
+	}
+	
+	bool setPiece(Piece piece, int row, int col) {
+		if (!pieceExistsAt(row, col)) {
+			int pos = gridToPos(row, col);
+			board.put(pos, piece);
+		}
+		return false;
+	}
+	
+	int gridToPos(int row, int col) {
+		return (row * size) + col;
+	}
+	 */
+	
+	void draw() {
+		int rowSize = getRowSize();
+		int colSize = getColSize();
+		
+		for (int i = 0; i < size; i++ ) {
+			bool even = i % 2;
+			for (int j = 0; j < size; j++) {
+				even ? setColor("BLACK") : setColor("WHITE");
+				even = !even;
+				
+				fillRect(j * colSize, i * rowSize, colSize, rowSize);
+			}
+		}
 	}
 	
 private:
+	int width;
+	int height;
+	int size;
+	//Map<int, Piece> board;
 	
-	int getComputerMove() {
-		int nTaken = findGoodMove(nCoins);
-		return (nTaken == NO_GOOD_MOVE) ? 1 : nTaken;
+};
+
+class Piece {
+public:
+	
+	
+	Piece() {
+		name = "";
+		row = 0;
+		col = 0;
 	}
 	
-	int findGoodMove(int nCoins) {
-		int limit = (nCoins < MAX_MOVE) ? nCoins : MAX_MOVE;
+	Piece(string cName, int cRow, int cCol) {
+		name = cName;
+		row = cRow;
+		col = cCol;
+	}
+	
+	void draw(Game game) {
+		setColor("BLUE");
+		setFont("Arial-Bold-48");
 		
-		for (int nTaken = 1; nTaken <= limit; nTaken++) {
-			if (isBadPosition(nCoins - nTaken)) 
-				return nTaken;
-		}
+		int rowSize = game.getRowSize();
+		int colSize = game.getColSize();
 		
-		return NO_GOOD_MOVE;
-	}
-	
-	bool isBadPosition(int nCoins) {
-		if (nCoins == 1) 
-			return true;
+		int rowNudge = 24;
+		int colNudge = colSize - 24;
 		
-		return findGoodMove(nCoins) == NO_GOOD_MOVE;
+		drawString(name, row * rowSize + (rowNudge), col * colSize + (colNudge));
 	}
 	
-	int getUserMove() {
-		while (true) {
-			int nTaken = getInteger("How many would you like? ");
-			int limit = (nCoins < MAX_MOVE) ? nCoins : MAX_MOVE;
-			
-			if (nTaken > 0 && nTaken <= limit) 
-				return nTaken;
-			
-			cout << "That's cheating! Please choose a number";
-			cout << " between 1 and " << limit << "." << endl;
-			cout << "There are " << nCoins << " coins in the pile." << endl;
-		}
+private:
+	string name;
+	int row;
+	int col;
+	
+};
+
+
+int getPos(int row, int col) {
+	return (row * 8) + col;
+}
+
+bool boardSpaceOpen(Map<int, Piece> & board, int row, int col) {
+	return !board.containsKey(getPos(row, col));
+}
+
+bool canPlaceQueen(Map<int, Piece> & board, int row, int col) {
+	
+	if (!boardSpaceOpen(board, row, col))
+		return false;
+	
+	for (int i = 0; i < 8; i++) {
+		
+		// Row
+		if (board.containsKey(getPos(row + i, col)))
+			return false;
+		
+		if (board.containsKey(getPos(row - i, col)))
+			return false;
+		
+		// Col
+		if (board.containsKey(getPos(row, col + i)))
+			return false;
+		
+		if (board.containsKey(getPos(row, col - i)))
+			return false;
+		
+		// TR
+		if (board.containsKey(getPos(row + i, col + i)))
+			return false;
+		
+		// BR
+		if (board.containsKey(getPos(row - i, col - i)))
+			return false;
+		
+		// BR
+		if (board.containsKey(getPos(row - i, col + i)))
+			return false;
+		
+		// TL
+		if (board.containsKey(getPos(row + i, col - i)))
+			return false;
 	}
 	
+	return true;
+}
+
+void drawPiece(Game & game, Map<int, Piece> & board, int name, int row, int col) {
+
+	Piece piece = Piece(integerToString(name), row, col);
+	board.put(getPos(row, col), piece);
+	piece.draw(game);
+}
+
+bool randomPieces(Game & game, Map<int, Piece> & board, int c) {
 	
+	if (c == 0)
+		return true;
 	
+
+	int row = randomInteger(0, game.getSize() - 1);
+	int col = randomInteger(0, game.getSize() - 1);
+		
+	if (!boardSpaceOpen(board, row, col))
+		return randomPieces(game, board, c);
 	
-	void announceResult() { 
-		if (nCoins == 0) {
-			cout << "You took the last coin. You lose." << endl;
-		} else {
-			cout << "There is only one coin left." << endl;
-			if (whoseTurn == HUMAN) {
-				cout << "I win." << endl;
-			} else {
-				cout << "I lose." << endl;
+	drawPiece(game, board, c, row, col);
+	pause(500);	
+	
+	randomPieces(game, board, c-1);
+	
+	return false;
+}
+
+bool maxQueens(Game & game, Map<int, Piece> & board, int row, int col) {
+	// if we've reached the limit
+		// return true
+	
+	// for each change
+		// if we can make the change
+		// make the change
+		// if we can solve
+			// done
+		// remove change
+	// can't solve
+	int size = game.getSize();
+	
+	for (int i = 0; i < row; i++) {
+		for (int j = 0; j < col; j++) {
+			if (canPlaceQueen(board, i, j)) {
+				cout << i << ", " << col;
+				drawPiece(game, board, 1, i, j);
+				pause(500);	
 			}
 		}
 	}
 	
-	int nCoins; 
-	Player whoseTurn;
-};
-	
-	
-	
+	return false;
+}
+
 int main() {
-	SimpleNim game;
-	game.printInstructions();
-	return 0;
-	game.play();
+	
+	int width = 640;
+	int height = 640;
+	int size = 8;
+	
+	initGraphics(width, height);
+	
+	Game game = Game(width, height, size);
+	Map<int, Piece> board;
+	
+	
+	while (true) {
+		int items = 8; //getInteger("How many pieces to randomize?");
+		
+		if (items == 0)
+			break;
+		
+		game.draw();
+		
+		//randomPieces(game, pieces, 8);
+		maxQueens(game, board, 7, 7);
+		
+		break;
+	}
+	
+	
+	
 	return 0;
 }
