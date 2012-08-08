@@ -8,6 +8,7 @@
 #include <iostream>
 #include <iomanip>
 #include <string>
+#include "math.h"
 #include "console.h"
 #include "graphics.h"
 #include "strlib.h"
@@ -17,201 +18,178 @@
 
 using namespace std;
 
+const int SCREEN_WIDTH = 480;
+const int SCREEN_HEIGHT = 480;
 
-class Game {
-public:
-	
-	Game(int cWidth, int cHeight, int cSize) {
-		width = cWidth;
-		height = cHeight;
-		size = cSize;
-		//Map<int, Piece> board;
-	}
-	
-	int getSize() {
-		return size;
-	}
-	
-	int getRowSize() {
-		return height / size;
-	}
-	
-	int getColSize() {
-		return width / size;
-	}
-	/*
-	bool pieceExistsAt(int row, int col) {
-		int pos = gridToPos(row, col);
-		return board.containsKey(pos);
-	}
-	
-	bool setPiece(Piece piece, int row, int col) {
-		if (!pieceExistsAt(row, col)) {
-			int pos = gridToPos(row, col);
-			board.put(pos, piece);
-		}
-		return false;
-	}
-	
-	int gridToPos(int row, int col) {
-		return (row * size) + col;
-	}
-	 */
-	
-	void draw() {
-		int rowSize = getRowSize();
-		int colSize = getColSize();
-		
-		for (int i = 0; i < size; i++ ) {
-			bool even = i % 2;
-			for (int j = 0; j < size; j++) {
-				even ? setColor("BLACK") : setColor("WHITE");
-				even = !even;
-				
-				fillRect(j * colSize, i * rowSize, colSize, rowSize);
-			}
-		}
-	}
-	
-private:
-	int width;
-	int height;
-	int size;
-	//Map<int, Piece> board;
-	
-};
-
-class Piece {
-public:
-	
-	
-	Piece() {
-		name = "";
-		row = 0;
-		col = 0;
-	}
-	
-	Piece(string cName, int cRow, int cCol) {
-		name = cName;
-		row = cRow;
-		col = cCol;
-	}
-	
-	void draw(Game game) {
-		setColor("BLUE");
-		setFont("Arial-Bold-48");
-		
-		int rowSize = game.getRowSize();
-		int colSize = game.getColSize();
-		
-		int rowNudge = 24;
-		int colNudge = colSize - 24;
-		
-		drawString(name, row * rowSize + (rowNudge), col * colSize + (colNudge));
-	}
-	
-private:
-	string name;
-	int row;
-	int col;
-	
-};
+const int BOARD_ROWS = 8;
+const int BOARD_COLS = 8;
+const int BOARD_SIZE = (BOARD_ROWS * BOARD_COLS);
 
 
-int getPos(int row, int col) {
-	return (row * 8) + col;
+void drawPiece(string name, int row, int col);
+void drawPiece(int name, int row, int col);
+
+
+
+
+
+int posAt(int row, int col) {
+	return (row * BOARD_ROWS) + col;
 }
 
-bool boardSpaceOpen(Map<int, Piece> & board, int row, int col) {
-	return !board.containsKey(getPos(row, col));
+bool canPlacePiece(Map<int, string> & board, int row, int col) {
+	bool exists = board.containsKey(posAt(row, col));
+	
+	drawPiece(".", row, col);
+	if (col > 2) pause(250);
+	if (col > 2 && exists) {
+		cout << "C: " << row << ", " << col << " " << exists << endl;
+		drawPiece("X", row, col);
+		pause(1000);
+	}
+	pause(10);
+	
+	
+	return !exists;
 }
 
-bool canPlaceQueen(Map<int, Piece> & board, int row, int col) {
+bool canPlaceQueen(Map<int, string> & board, int row, int col) {
 	
-	if (!boardSpaceOpen(board, row, col))
+	if (!canPlacePiece(board, row, col))
 		return false;
 	
 	for (int i = 0; i < 8; i++) {
-		
 		// Row
-		if (board.containsKey(getPos(row + i, col)))
+		if ((row + i) < BOARD_ROWS && !canPlacePiece(board, row + i, col))
 			return false;
 		
-		if (board.containsKey(getPos(row - i, col)))
+		if ((row - i) > BOARD_ROWS &&!canPlacePiece(board, row - i, col))
 			return false;
 		
 		// Col
-		if (board.containsKey(getPos(row, col + i)))
+		if (!canPlacePiece(board, row, col + i))
 			return false;
 		
-		if (board.containsKey(getPos(row, col - i)))
-			return false;
+		if (!canPlacePiece(board, row, col - i))
+			return false;//
 		
 		// TR
-		if (board.containsKey(getPos(row + i, col + i)))
+		if (!canPlacePiece(board, row + i, col + i))
 			return false;
 		
 		// BR
-		if (board.containsKey(getPos(row - i, col - i)))
+		if (!canPlacePiece(board, row - i, col + i))
 			return false;
 		
 		// BR
-		if (board.containsKey(getPos(row - i, col + i)))
+		if (!canPlacePiece(board, row - i, col - i))
 			return false;
 		
 		// TL
-		if (board.containsKey(getPos(row + i, col - i)))
+		if (!canPlacePiece(board, row + i, col - i))
 			return false;
 	}
 	
 	return true;
 }
 
-void drawPiece(Game & game, Map<int, Piece> & board, int name, int row, int col) {
-
-	Piece piece = Piece(integerToString(name), row, col);
-	board.put(getPos(row, col), piece);
-	piece.draw(game);
+void drawBoard() {
+	int rowSize = SCREEN_HEIGHT/ BOARD_ROWS;
+	int colSize = SCREEN_WIDTH / BOARD_COLS;
+	
+	for (int i = 0; i < BOARD_ROWS; i++ ) {
+		bool even = i % 2;
+		for (int j = 0; j < BOARD_COLS; j++) {
+			even ? setColor("BLACK") : setColor("WHITE");
+			even = !even;
+			
+			fillRect(j * colSize, i * rowSize, colSize, rowSize);
+		}
+	}
 }
 
-bool randomPieces(Game & game, Map<int, Piece> & board, int c) {
+
+void addPiece(Map<int, string> & board, string name, int row, int col) {
+	board.put(posAt(row, col), name);
+}
+void addPiece(Map<int, string> & board, int name, int row, int col) {
+	string newName = integerToString(name);
+	addPiece(board, newName, row, col);
+}
+
+void removePiece(Map<int, string> & board, int row, int col) {
+	if (board.containsKey(posAt(row, col))) {
+		board.remove(posAt(row, col));
+	}
+}
+
+void drawPiece(string name, int row, int col) {
+	
+	setColor("BLUE");
+	setFont("Arial-Bold-36");
+	
+	int rowSize = SCREEN_HEIGHT / BOARD_ROWS;
+	int colSize = SCREEN_WIDTH / BOARD_COLS;
+	
+	int colNudge = (BOARD_COLS * 2);
+	int rowNudge = rowSize - (BOARD_ROWS * 2);
+	
+	int x = col * colSize + colNudge;
+	int y = row * rowSize + rowNudge;
+	
+	drawString(name, x, y);
+}
+
+void drawPiece(int name, int row, int col) {
+	string newName = integerToString(name);
+	drawPiece(newName, row, col);
+}
+
+void drawPieces(Map<int, string> & board) {
+	for (int i = 0; i < BOARD_ROWS; i++ ) {
+		for (int j = 0; j < BOARD_COLS; j++) {
+			if (board.containsKey(posAt(i, j)) ) {
+				string name = board.get(posAt(i, j));
+				drawPiece(name, i, j);
+			}
+		}
+	}	
+}
+
+void draw(Map<int, string> & board) {
+	drawBoard();
+	drawPieces(board);
+}
+
+bool randomPieces(Map<int, string> & board, int c) {
 	
 	if (c == 0)
 		return true;
 	
 
-	int row = randomInteger(0, game.getSize() - 1);
-	int col = randomInteger(0, game.getSize() - 1);
+	int row = randomInteger(0, BOARD_ROWS - 1);
+	int col = randomInteger(0, BOARD_COLS - 1);
 		
-	if (!boardSpaceOpen(board, row, col))
-		return randomPieces(game, board, c);
+	if (!canPlacePiece(board, row, col))
+		return randomPieces(board, c);
 	
-	drawPiece(game, board, c, row, col);
-	pause(500);	
+	addPiece(board, c, row, col);
+	draw(board);
+	pause(350);	
 	
-	randomPieces(game, board, c-1);
+	randomPieces(board, c-1);
 	
 	return false;
 }
 
-bool maxQueens(Game & game, Map<int, Piece> & board, int row, int col) {
-	// if we've reached the limit
-		// return true
-	
-	// for each change
-		// if we can make the change
-		// make the change
-		// if we can solve
-			// done
-		// remove change
-	// can't solve
-	int size = game.getSize();
-	
+
+bool iterativeMaxQueens(Map<int, string> & board, int row, int col) {	
 	for (int i = 0; i < row; i++) {
 		for (int j = 0; j < col; j++) {
 			if (canPlaceQueen(board, i, j)) {
 				cout << i << ", " << col;
-				drawPiece(game, board, 1, i, j);
+				addPiece(board, "Q", i, j);
+				draw(board);
 				pause(500);	
 			}
 		}
@@ -220,33 +198,62 @@ bool maxQueens(Game & game, Map<int, Piece> & board, int row, int col) {
 	return false;
 }
 
-int main() {
+bool solveMaxQueens(Map<int, string> & board, int col) {
+
+	if (col >= BOARD_COLS ) 
+		return true;
 	
-	int width = 640;
-	int height = 640;
-	int size = 8;
+	int DELAY = 350;
 	
-	initGraphics(width, height);
-	
-	Game game = Game(width, height, size);
-	Map<int, Piece> board;
-	
-	
-	while (true) {
-		int items = 8; //getInteger("How many pieces to randomize?");
-		
-		if (items == 0)
-			break;
-		
-		game.draw();
-		
-		//randomPieces(game, pieces, 8);
-		maxQueens(game, board, 7, 7);
-		
-		break;
+	for (int row = 0; row < BOARD_ROWS; row++) {
+		cout << row << ", " << col << endl;		
+		if (canPlaceQueen(board, row, col)) {
+
+			addPiece(board, "Q", row, col);
+			draw(board);
+			pause(DELAY);
+			
+			if (solveMaxQueens(board, col + 1)) {
+				return true;
+			} else {
+				removePiece(board, row, col);
+				draw(board);
+			}
+				
+		} else {
+			addPiece(board, "F", row, col);
+			draw(board);
+			pause(DELAY);
+
+			removePiece(board, row, col);
+		}
+
 	}
 	
+	return false;
+}
+
+int main() {
+	
+	initGraphics(SCREEN_WIDTH, SCREEN_HEIGHT);
+	
+	Map<int, string> board;
+
+	
+	draw(board);
+		
+	//randomPieces(board, 32);
+	//iterativeMaxQueens(board, 7, 7);
+//	addPiece(board, "Q", 4, 4);
+//	cout << canPlaceQueen(board, 4, 4) << endl;
+//	cout << canPlaceQueen(board, 3, 4) << endl;
+//	cout << canPlaceQueen(board, 3, 5) << endl;
+//	cout << canPlaceQueen(board, 4, 5) << endl;
+//	draw(board);
 	
 	
+	bool result = solveMaxQueens(board, 0);
+	cout << result << endl;
+
 	return 0;
 }
